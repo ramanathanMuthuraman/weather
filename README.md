@@ -1,3 +1,3 @@
 weather
 =======
-Weather Application using Angular JS
+Weather Forecast Application using Angular JS
