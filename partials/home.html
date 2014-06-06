@@ -1,0 +1,76 @@
+<div class="home page content">
+
+        <input  type="text" placeholder="Enter City Name" ng-model="selected"  typeahead-min-length="3" typeahead="state for state in states | filter:$viewValue | limitTo:8" class="form-control" typeahead-on-select='onSelect($item)'>
+  <div></div>
+  <div  ng-if="weather" >
+    <h3 id="city_name">
+      {{weather.name}}
+    </h3>
+    
+    <ul class="profile">
+      <img class="picture"  ng-src="http://openweathermap.org/img/w/{{weather.weather[0].icon}}.png" />
+      
+      <li class="clearfix">
+        <h2 id="city_temp">
+          Temperature {{weather.main.temp}}°C
+        </h2>
+        <p>
+        </p>
+        <div id="date_m">
+          {{ weather.dt | moment}}
+        </div>
+        <p>
+        </p>
+      </li>
+   </ul>
+    
+    <ul class="field">
+      
+      <li>
+        <h3>
+          Wind
+        </h3>
+        <div class="likea" id="city_wind">
+          {{weather.wind.speed}} m/s
+        </div>
+      </li>
+      <li>
+        <h3>
+          Cloudiness
+        </h3>
+        <div class="likea" id="city_clouds">
+          {{weather.clouds.all}} %
+        </div>
+      </li>
+      <li>
+        <h3>
+          Atmospheric pressure
+        </h3>
+        <div class="likea" id="city_pressure">
+          {{weather.main.pressure}} hpa
+        </div>
+      </li>
+      <li>
+        <h3>
+          Humidity
+        </h3>
+        <div class="likea" id="city_humidity">
+          {{weather.main.humidity}} %
+        </div>
+      </li>
+      <li>
+        <h3>
+          Bottomline
+        </h3>
+        <div class="likea" id="city_weather">
+          {{weather.weather[0].description}}
+        </div>
+      </li>
+      
+    </ul>
+    
+  </div>
+</div>
+<footer class="footer">
+   <button type="button" ng-disabled="noCitySelected" class="btn btn-default navbar-btn navbar-right" ng-click="forecastMethod()">Forecast</button>
+</footer> 

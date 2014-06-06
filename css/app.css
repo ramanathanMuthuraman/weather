@@ -1,0 +1,23 @@
+/* app css stylesheet */
+*{
+    margin: 0;
+    padding: 0;
+}
+ul,li{
+    list-style: none;
+}
+.preloader
+{
+	height: 100%;
+	width:100%;
+	background:url("../img/loader.png") no-repeat center;	
+    background-color: rgba(0,0,0,0.5);
+	position: absolute;
+	z-index: 1;
+}
+.content
+{
+	overflow-y: auto;
+	height: 470px;
+}
+

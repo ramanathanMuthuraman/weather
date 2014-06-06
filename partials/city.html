@@ -1,0 +1,21 @@
+  <div class="content" >
+               <h1>
+      {{selectedCity}}
+             </h1>
+        <ul ng-repeat="item in forecast.list">
+   
+            <li>
+              <h3 class="ui-li-heading">
+                {{ item.dt | moment}}
+              </h3>
+              <p class="ui-li-desc">
+                Temp. from {{item.temp.min}} to {{item.temp.max}}°С
+              </p>
+            </li>
+            
+             </ul>
+               </div>
+               <footer class="footer">
+              <button type="button" class="btn btn-default navbar-btn navbar-right" ng-click="back()">Back</button>
+            </footer>
+      
