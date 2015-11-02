@@ -6,7 +6,7 @@ myApp.factory('myService', function($http,$rootScope){
 return  {
         getResponse: function(url,params) {
          $rootScope.showPreloader=true;
-         params.APPID = 259038fc53ee9dbd54049ea614739e66;
+         params.APPID = '259038fc53ee9dbd54049ea614739e66';
          var promise =    $http({
             method: 'GET',
             url: url,
