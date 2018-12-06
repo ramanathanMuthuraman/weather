@@ -1,0 +1,20 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "description": "Weather Forecast Application using [Angular JS] (https://angularjs.org/) which consumes [Openweathermap API] (http://openweathermap.org/api)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ramanathanMuthuraman/weather.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ramanathanMuthuraman/weather/issues"
+  },
+  "homepage": "https://github.com/ramanathanMuthuraman/weather#readme"
+}
