@@ -2,6 +2,7 @@
   "name": "weather",
   "version": "1.0.0",
   "description": "Weather Forecast Application using [Angular JS] (https://angularjs.org/) which consumes [Openweathermap API] (http://openweathermap.org/api)",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
